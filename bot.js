@@ -21,7 +21,7 @@ var fs = require('fs');
 
 client.on('ready', function(){ // Leaked by [ @M3a4x ]
     var ms = 30000 ;
-    var setGame = [`MooN Community `,` MooN Bot By MooN TeaM !`];
+    var setGame = [`Friends System `,` MooN Bot By MooN TeaM !`];
     var i = -1;
     var j = 0;
     setInterval(function (){
