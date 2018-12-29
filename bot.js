@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- const prefix = "#";
+ const prefix = "$";
 client.on('ready', () => { // Leaked by [ @M3a4x ]
     console.log('I am ready!');
 });
