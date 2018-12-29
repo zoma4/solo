@@ -21,7 +21,7 @@ var fs = require('fs');
 
 client.on('ready', function(){ // Leaked by [ @M3a4x ]
     var ms = 30000 ;
-    var setGame = [`Friends System `,` SYSTEM Bot By Ahmed Hazem !`];
+    var setGame = [`MooN Community `,` MooN Bot By MooN TeaM !`];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -805,9 +805,9 @@ vv.on("collect", r => {
 .setAuthor(client.user.username , client.user.avatarURL)
  .setThumbnail(msg.author.avatarURL)
  .setTitle(`Welcome To ${msg.guild.name}`)
-           .setFooter(`- Requested By: #{msg.author.tag}`,msg.author.avatarURL)
+           .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
   .setURL('https://discordapp.com/oauth2/authorize/?permissions=268443710&scope=bot&client_id=465885551329804288')
-.setDescription(`**' SYSTEM BOT Discord.\n#help - لرؤية الأوامر :comet: \n#inv - لدعوة البوت :wine_glass: \n معلومات عن البوت :thinking: \n بوت ديسكورت متكامل :soccer: :microphone: :earth_americas: \nيوجد داخل البوت خاصية منع التهكير مجانا وبسهوله تامة :scream: \nصيانة دورية :stopwatch: :wrench: \n 24 ساعة :point_up:
+.setDescription(`**' MooN Bot Discord.\n$help - لرؤية الأوامر :comet: \n$inv - لدعوة البوت :wine_glass: \n معلومات عن البوت :thinking: \n بوت ديسكورت متكامل :soccer: :microphone: :earth_americas: \nيوجد داخل البوت خاصية منع التهكير مجانا وبسهوله تامة :scream: \nصيانة دورية :stopwatch: :wrench: \n 24 ساعة :point_up:
  \nاضافات يومية :link: \n الدعم الفني للمساعدةة : https://discord.gg/VbnKYRx  :rose:  \n وشكرا لكم :lizard: **`)
 
 
@@ -1000,13 +1000,13 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
  client.on('message', message => { // Leaked by [ @M3a4x ]
         var  user = message.mentions.users.first() || message.author;
     if (message.content.startsWith(prefix + "avatar")) {
-message.channel.send(`This avatar For #{user} link : #{user.avatarURL}`);
+message.channel.send(`This avatar For ${user} link : ${user.avatarURL}`);
 }
 });
 
 client.on("message", message => { // Leaked by [ @M3a4x ]
-if (message.content === "#system-sar7") {
-message.channel.send(`**الامر :  #sar7\n خاصيه صارح\nالطريقه كـ التالي :\nتروح البوت خاص : http://prntscr.com/k4kpsb \n مثال : بصارح نفسي للتجربة : http://prntscr.com/k4kq59 \n وتضغط صح
+if (message.content === "$system-sar7") {
+message.channel.send(`**الامر :  $sar7\n خاصيه صارح\nالطريقه كـ التالي :\nتروح البوت خاص : http://prntscr.com/k4kpsb \n مثال : بصارح نفسي للتجربة : http://prntscr.com/k4kq59 \n وتضغط صح
 بيصير كذا :http://prntscr.com/k4kqna \n وبس كذا اشتغل الامر ميه ميه :thumbsup: ** `)
 }
 });
@@ -1091,9 +1091,9 @@ client.on("message", message => { // Leaked by [ @M3a4x ]
       .setTitle("Muted Ads")
             .addField(`**  You Have Been Muted **` , `**Reason : Sharing Another Discord Link**`)
             .setColor("c91616")
-            .setThumbnail(`#{message.author.avatarURL}`)
+            .setThumbnail(`${message.author.avatarURL}`)
             .setAuthor(message.author.username, message.author.avatarURL)
-        .setFooter(`#{message.guild.name} `)
+        .setFooter(`${message.guild.name} `)
      message.channel.send(embed500)
 	 message.author.send('` انت معاقب ميوت شاتي بسبب نشر سرفرات ان كان عن طريق الخطا **ف** تكلم مع الادارة `');
 
@@ -1154,7 +1154,7 @@ message.react("❌")
 
 
 client.on("message", (message) => {
-    if (message.content.startsWith('#rem')) {
+    if (message.content.startsWith('$rem')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
 
         let args = message.content.split(' ').slice(1);
